@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/XUnicodeLogKit.svg?style=flat)](https://cocoapods.org/pods/XUnicodeLogKit)
 [![Platform](https://img.shields.io/cocoapods/p/XUnicodeLogKit.svg?style=flat)](https://cocoapods.org/pods/XUnicodeLogKit)
 
+## Description
+
+适用Objective-C语言开发，解决JSON数据中的中文在打印时，显示成Unicode编码的问题。
+
+使用时直接pod安装，无须导入头文件。
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

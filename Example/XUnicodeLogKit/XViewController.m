@@ -20,6 +20,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)logTestEvent:(UIButton *)sender {
+    
+    NSDictionary *dict = @{@"key": @"我是中国人"};
+    NSLog(@"%@", dict);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
