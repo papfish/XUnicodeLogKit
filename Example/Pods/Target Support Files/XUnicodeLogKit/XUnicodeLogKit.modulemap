@@ -1,0 +1,6 @@
+framework module XUnicodeLogKit {
+  umbrella header "XUnicodeLogKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

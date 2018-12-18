@@ -1,0 +1,16 @@
+PODS:
+  - XUnicodeLogKit (0.1.0)
+
+DEPENDENCIES:
+  - XUnicodeLogKit (from `../`)
+
+EXTERNAL SOURCES:
+  XUnicodeLogKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XUnicodeLogKit: 4eafe544e7d57d86fedc5cec499a825cc529c45d
+
+PODFILE CHECKSUM: a0071744c923c8dcdff9c971065b1dcdaeb77aa6
+
+COCOAPODS: 1.5.3
