@@ -13,6 +13,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface NSArray (XUnicodeLogKit)
+
+@end
+
+@interface NSSet (XUnicodeLogKit)
+
+@end
+
+@interface NSData (XUnicodeLogKit)
+
+@end
+
 @interface NSString (XUnicodeLogKit)
 
 @end
