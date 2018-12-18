@@ -22,20 +22,32 @@
 
 - (IBAction)logTestEvent:(UIButton *)sender {
     
-    NSDictionary *dict = @{@"key": @"我是中国人"};
-    NSLog(@"%@", dict);
+    // dictionary
+    NSMutableDictionary *mDict = [NSMutableDictionary dictionary];
     
-    NSArray *array = @[@"我是中国人"];
-    NSLog(@"%@", array);
+    // string
+    [mDict setObject:@"我是中国人" forKey:@"字符串"];
     
-    NSArray *array2 = @[[@"我是中国人" dataUsingEncoding:NSUTF8StringEncoding]];
-    NSLog(@"%@", array2);
+    // array
+    NSMutableArray *mArray = [NSMutableArray array];
+    [mArray addObject:@"我是中国人"];
+    [mArray addObject:@"chinese"];
+    [mDict setObject:mArray forKey:@"数组"];
     
-    NSArray *array3 = @[[[XViewController alloc] init]];
-    NSLog(@"%@", array3);
+    // set
+    NSMutableSet *mSet = [NSMutableSet set];
+    [mSet addObject:@"我是中国人"];
+    [mSet addObject:@"chinese"];
+    [mDict setObject:mSet forKey:@"集合"];
     
-    NSSet *set = [NSSet setWithObjects:[[XViewController alloc] init], @"我是中国人", nil];
-    NSLog(@"%@", set);
+    // data
+    NSData *data = [@"[\"我是中国人\", \"我我我\"]" dataUsingEncoding:NSUTF8StringEncoding];
+    [mDict setObject:data forKey:@"NSData"];
+    
+    // object
+    [mDict setObject:[[XViewController alloc] init] forKey:@"对象"];
+    
+    NSLog(@"%@", mDict);
 }
 
 - (void)didReceiveMemoryWarning
