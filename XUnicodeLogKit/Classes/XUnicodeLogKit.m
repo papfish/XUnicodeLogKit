@@ -11,7 +11,7 @@
 @implementation NSDictionary (XUnicodeLogKit)
 
 #ifdef DEBUG
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     NSMutableString *tempString = [NSMutableString string];
     NSMutableString *tabString = [[NSMutableString alloc] initWithString:@"\t"];
     for (NSUInteger i = 0; i < level; i++) {
@@ -36,7 +36,7 @@
         [tempString appendString:@",\r\n"];
     }];
     
-    [tempString appendFormat:@"%@}",[tabString substringToIndex:(tabString.length - 1)]];
+    [tempString appendFormat:@"%@}", [tabString substringToIndex:(tabString.length - 1)]];
     return tempString.copy;
 }
 #endif
@@ -47,7 +47,7 @@
 @implementation NSArray (XUnicodeLogKit)
 
 #ifdef DEBUG
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     NSMutableString *tempString = [NSMutableString string];
     NSMutableString *tabString = [[NSMutableString alloc] initWithString:@"\t"];
     for (NSUInteger i = 0; i < level; i++) {
@@ -72,7 +72,7 @@
         [tempString appendString:@",\r\n"];
     }];
     
-    [tempString appendFormat:@"%@)",[tabString substringToIndex:(tabString.length - 1)]];
+    [tempString appendFormat:@"%@)", [tabString substringToIndex:(tabString.length - 1)]];
     return tempString.copy;
 }
 #endif
@@ -83,7 +83,7 @@
 @implementation NSSet (XUnicodeLogKit)
 
 #ifdef DEBUG
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     NSMutableString *tempString = [NSMutableString string];
     NSMutableString *tabString = [[NSMutableString alloc] initWithString:@"\t"];
     for (NSUInteger i = 0; i < level; i++) {
@@ -108,7 +108,7 @@
         [tempString appendString:@",\r\n"];
     }];
     
-    [tempString appendFormat:@"%@)",[tabString substringToIndex:(tabString.length - 1)]];
+    [tempString appendFormat:@"%@)", [tabString substringToIndex:(tabString.length - 1)]];
     return tempString.copy;
 }
 #endif
@@ -119,10 +119,8 @@
 @implementation NSData (XUnicodeLogKit)
 
 #ifdef DEBUG
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level
-{
+- (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     NSMutableString *tempString = [NSMutableString string];
-    
     NSError *error = nil;
     id result = [NSJSONSerialization JSONObjectWithData:self options:0 error:&error];
     if (error == nil
@@ -145,7 +143,7 @@
 @implementation NSString (XUnicodeLogKit)
 
 #ifdef DEBUG
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     return [NSString stringWithFormat:@"\"%@\"", self];
 }
 #endif

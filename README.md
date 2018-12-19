@@ -7,9 +7,9 @@
 
 ## Description
 
-适用Objective-C语言开发，解决JSON数据中的中文在打印时，显示成Unicode编码的问题。
-
 使用时直接pod安装，无须导入头文件。
+
+适用Objective-C语言开发，解决打印时，中文显示成Unicode编码的问题。
 
 ## Example
 
