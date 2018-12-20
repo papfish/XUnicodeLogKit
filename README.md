@@ -23,7 +23,7 @@ XUnicodeLogKit is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'XUnicodeLogKit'
+pod 'XUnicodeLogKit', '~> 0.2.0'
 ```
 
 ## Author

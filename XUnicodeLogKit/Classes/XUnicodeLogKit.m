@@ -20,7 +20,7 @@
     if (level == 0) {
         [tempString appendString:@"\n"];
     }
-    [tempString appendString:@"{\r\n"];
+    [tempString appendString:@"{\r"];
     
     [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         [tempString appendString:tabString];
@@ -33,7 +33,7 @@
         } else {
             [tempString appendFormat:@"%@ = %@", key, obj];
         }
-        [tempString appendString:@",\r\n"];
+        [tempString appendString:@",\r"];
     }];
     
     [tempString appendFormat:@"%@}", [tabString substringToIndex:(tabString.length - 1)]];
@@ -56,7 +56,7 @@
     if (level == 0) {
         [tempString appendString:@"\n"];
     }
-    [tempString appendString:@"(\r\n"];
+    [tempString appendString:@"(\r"];
     
     [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [tempString appendString:tabString];
@@ -69,7 +69,7 @@
         } else {
             [tempString appendFormat:@"%@", obj];
         }
-        [tempString appendString:@",\r\n"];
+        [tempString appendString:@",\r"];
     }];
     
     [tempString appendFormat:@"%@)", [tabString substringToIndex:(tabString.length - 1)]];
@@ -92,7 +92,7 @@
     if (level == 0) {
         [tempString appendString:@"\n"];
     }
-    [tempString appendString:@"(\r\n"];
+    [tempString appendString:@"(\r"];
     
     [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
         [tempString appendString:tabString];
@@ -105,7 +105,7 @@
         } else {
             [tempString appendFormat:@"%@", obj];
         }
-        [tempString appendString:@",\r\n"];
+        [tempString appendString:@",\r"];
     }];
     
     [tempString appendFormat:@"%@)", [tabString substringToIndex:(tabString.length - 1)]];
