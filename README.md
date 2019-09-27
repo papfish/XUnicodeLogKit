@@ -1,6 +1,6 @@
 # XUnicodeLogKit
 
-[![CI Status](https://img.shields.io/travis/xuliang2015/XUnicodeLogKit.svg?style=flat)](https://travis-ci.org/xuliang2015/XUnicodeLogKit)
+[![CI Status](https://img.shields.io/travis/papfish/XUnicodeLogKit.svg?style=flat)](https://travis-ci.org/papfish/XUnicodeLogKit)
 [![Version](https://img.shields.io/cocoapods/v/XUnicodeLogKit.svg?style=flat)](https://cocoapods.org/pods/XUnicodeLogKit)
 [![License](https://img.shields.io/cocoapods/l/XUnicodeLogKit.svg?style=flat)](https://cocoapods.org/pods/XUnicodeLogKit)
 [![Platform](https://img.shields.io/cocoapods/p/XUnicodeLogKit.svg?style=flat)](https://cocoapods.org/pods/XUnicodeLogKit)
@@ -28,7 +28,7 @@ pod 'XUnicodeLogKit', '~> 0.2.0'
 
 ## Author
 
-xuliang2015, liang.xv@qq.com
+liang.xv@qq.com
 
 ## License
 

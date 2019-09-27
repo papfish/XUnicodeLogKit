@@ -1,5 +1,5 @@
 PODS:
-  - XUnicodeLogKit (0.2.0)
+  - XUnicodeLogKit (0.2.1)
 
 DEPENDENCIES:
   - XUnicodeLogKit (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XUnicodeLogKit: 05dc4beccbc5bb60cc59520d66276439179b204e
+  XUnicodeLogKit: ca775c6ab973fdef0e7695652b0d73285cec800c
 
 PODFILE CHECKSUM: a0071744c923c8dcdff9c971065b1dcdaeb77aa6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
